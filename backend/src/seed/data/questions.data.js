@@ -1,4 +1,4 @@
-const questions = [
+const questionsData = [
     {
         question: "Which cartoon character lives in a pineapple under the sea?",
         options: ["SpongeBob SquarePants", "Mickey Mouse", "Tom", "Doraemon"],
@@ -22,7 +22,7 @@ const questions = [
     },
     {
         question: "Which cartoon character says 'What's up, Doc?'",
-        options: ["Bugs Bunny", "Donald Duck", "Daffy Duck", "Mickey Mouse"],   
+        options: ["Bugs Bunny", "Donald Duck", "Daffy Duck", "Mickey Mouse"],
         answer: "Bugs Bunny",
         difficulty: "easy",
         category: "Cartoons and Animations",
@@ -31,7 +31,7 @@ const questions = [
         question: "Which cartoon dog is famous for solving mysteries with his friends?",
         options: ["Scooby-Doo", "Pluto", "Odie", "Courage"],
         answer: "Scooby-Doo",
-        difficulty: "easy", 
+        difficulty: "easy",
         category: "Cartoons and Animations",
     },
     {
@@ -47,7 +47,7 @@ const questions = [
         answer: "Pixar",
         difficulty: "medium",
         category: "Cartoons and Animations",
-    },  
+    },
     {
         question: "What type of animal is 'Kung Fu Panda'?",
         options: ["Panda", "Bear", "Tiger", "Monkey"],
@@ -95,7 +95,7 @@ const questions = [
         difficulty: "hard",
         category: "Cartoons and Animations",
     },
-    {   
+    {
         question: "In the anime 'Naruto', what is Naruto's last name?",
         options: ["Uzumaki", "Uchiha", "Hatake", "Hyuga"],
         answer: "Uzumaki",
@@ -108,7 +108,7 @@ const questions = [
         answer: "Inside Out",
         difficulty: "hard",
         category: "Cartoons and Animations",
-    }, 
+    },
     {
         question: "Which cartoon character lives in a pineapple under the sea?",
         options: ["Patrick Star", "SpongeBob SquarePants", "Squidward", "Mr. Krabs"],
@@ -136,7 +136,7 @@ const questions = [
         answer: "Simba",
         difficulty: "easy",
         category: "Cartoons and Animations",
-    },  
+    },
     {
         question: "Which cartoon family lives in Springfield?",
         options: ["The Griffins", "The Simpsons", "The Jetsons", "The Addams"],
@@ -157,7 +157,7 @@ const questions = [
         answer: "Death Note",
         difficulty: "medium",
         category: "Cartoons and Animations",
-    },  
+    },
     {
         question: "Which cartoon character wears a red shirt and has no pants?",
         options: ["Mickey Mouse", "Donald Duck", "Goofy", "Pluto"],
@@ -171,14 +171,14 @@ const questions = [
         answer: "Zootopia",
         difficulty: "medium",
         category: "Cartoons and Animations",
-    },  
+    },
     {
         question: "Which cartoon duo consists of a boy genius and his talking dog?",
         options: ["Dexter & Dee Dee", "Jimmy & Goddard", "Finn & Jake", "Phineas & Ferb"],
         answer: "Finn & Jake",
         difficulty: "medium",
         category: "Cartoons and Animations",
-    },  
+    },
     {
         question: "Which was the first full-length computer-animated movie?",
         options: ["Toy Story", "Shrek", "Monsters Inc.", "A Bug’s Life"],
@@ -192,28 +192,28 @@ const questions = [
         answer: "Studio Ghibli",
         difficulty: "hard",
         category: "Cartoons and Animations",
-      },
-      {
+    },
+    {
         question: "Which cartoon character lives in Bikini Bottom?",
         options: ["SpongeBob", "Dora", "Scooby-Doo", "Ben 10"],
         answer: "SpongeBob",
         difficulty: "hard",
         category: "Cartoons and Animations",
-      },
-      {
+    },
+    {
         question: "Which animated series features a scientist grandfather and his grandson traveling through dimensions?",
         options: ["Futurama", "Rick and Morty", "Gravity Falls", "Adventure Time"],
         answer: "Rick and Morty",
         difficulty: "hard",
         category: "Cartoons and Animations",
-      },
-      {
+    },
+    {
         question: "Which animated movie is based on emotions like Joy, Sadness, and Anger?",
-        options: ["Inside Out", "Soul", "Coco", "Luca"],    
+        options: ["Inside Out", "Soul", "Coco", "Luca"],
         answer: "Inside Out",
         difficulty: "hard",
         category: "Cartoons and Animations",
-    }, 
+    },
 
     // General Knowledge Questions
     {
@@ -231,7 +231,7 @@ const questions = [
         category: "General Knowledge",
     },
     {
-        question: "How many days are there in a week?", 
+        question: "How many days are there in a week?",
         options: ["5", "6", "7", "8"],
         answer: "7",
         difficulty: "easy",
@@ -266,7 +266,7 @@ const questions = [
     {
         question: "Which gas do plants absorb from the atmosphere?",
         options: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-        answer: "Carbon Dioxide",   
+        answer: "Carbon Dioxide",
         difficulty: "medium",
         category: "General Knowledge",
     },
@@ -279,12 +279,12 @@ const questions = [
     },
     {
         question: "Who wrote the national anthem of India?",
-        options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Subhash Chandra Bose"],  
+        options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Subhash Chandra Bose"],
         answer: "Rabindranath Tagore",
         difficulty: "medium",
         category: "General Knowledge",
     },
-    {   
+    {
         question: "Which instrument is used to measure temperature?",
         options: ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
         answer: "Thermometer",
@@ -354,7 +354,7 @@ const questions = [
         difficulty: "easy",
         category: "General Knowledge",
     },
-    {   
+    {
         question: "Which direction does the sun rise from?",
         options: ["West", "North", "East", "South"],
         answer: "East",
@@ -382,7 +382,7 @@ const questions = [
         difficulty: "medium",
         category: "General Knowledge",
     },
-    {   
+    {
         question: "What is the currency of Japan?",
         options: ["Won", "Yen", "Dollar", "Peso"],
         answer: "Yen",
@@ -396,7 +396,7 @@ const questions = [
         difficulty: "medium",
         category: "General Knowledge",
     },
-    {   
+    {
         question: "Which element has the chemical symbol 'K'?",
         options: ["Krypton", "Potassium", "Calcium", "Nickel"],
         answer: "Potassium",
@@ -479,10 +479,10 @@ const questions = [
         question: "Who plays the character of Sheldon Cooper in 'The Big Bang Theory'?",
         options: ["Jim Parsons", "Johnny Galecki", "Simon Helberg", "Kunal Nayyar"],
         answer: "Jim Parsons",
-        difficulty: "medium",       
+        difficulty: "medium",
         category: "Television",
     },
-{
+    {
         question: "Which TV series follows the life of a British royal family?",
         options: ["The Crown", "Downton Abbey", "Bridgerton", "Victoria"],
         answer: "The Crown",
@@ -533,14 +533,14 @@ const questions = [
     },
     {
         question: "Which series features the character Michael Scofield?",
-        options: ["Prison Break", "Lost", "24", "Dexter"],  
+        options: ["Prison Break", "Lost", "24", "Dexter"],
         answer: "Prison Break",
         difficulty: "hard",
         category: "Television",
     },
     {
         question: "Which TV show holds the record for the most Emmy Awards won?",
-        options: ["Saturday Night Live", "Game of Thrones", "The Simpsons", "The Crown"],  
+        options: ["Saturday Night Live", "Game of Thrones", "The Simpsons", "The Crown"],
         answer: "Saturday Night Live",
         difficulty: "hard",
         category: "Television",
@@ -654,7 +654,7 @@ const questions = [
     // History
     {
         question: "who is known as the Father of the Nation in India?",
-        options: ["Jawaharlal Nehru", "Subhash Chandra Bose", "Mahatma Gandhi", "Bhagat Singh"],  
+        options: ["Jawaharlal Nehru", "Subhash Chandra Bose", "Mahatma Gandhi", "Bhagat Singh"],
         answer: "Mahatma Gandhi",
         difficulty: "easy",
         category: "History",
@@ -689,14 +689,14 @@ const questions = [
     },
     {
         question: "Who discovered America in 1492?",
-        options: ["Vasco da Gama","Christopher Columbus","James Cook","Magellan"],
+        options: ["Vasco da Gama", "Christopher Columbus", "James Cook", "Magellan"],
         answer: "Christopher Columbus",
         difficulty: "medium",
         category: "History",
     },
     {
         question: "The Indus Valley Civilization is also known as?",
-        options: ["Mesopotamian", "Harappan", "Persian", "Egyptian"],  
+        options: ["Mesopotamian", "Harappan", "Persian", "Egyptian"],
         answer: "Harappan",
         difficulty: "medium",
         category: "History",
@@ -710,7 +710,7 @@ const questions = [
     },
     {
         question: "Which Mughal emperor built the Red Fort?",
-        options: ["Babur", "Akbar", "Jahangir","Shah Jahan"],
+        options: ["Babur", "Akbar", "Jahangir", "Shah Jahan"],
         answer: "Shah Jahan",
         difficulty: "medium",
         category: "History",
@@ -738,7 +738,7 @@ const questions = [
     },
     {
         question: "Which treaty ended World War I?",
-        options: [ "Treaty of Paris", "Treaty of Vienna", "Treaty of Versailles", "Treaty of London"],
+        options: ["Treaty of Paris", "Treaty of Vienna", "Treaty of Versailles", "Treaty of London"],
         answer: "Treaty of Versailles",
         difficulty: "hard",
         category: "History",
@@ -801,7 +801,7 @@ const questions = [
     },
     {
         question: "Which movement was started by Mahatma Gandhi in 1942?",
-        options: ["Non-Cooperation Movement", "Civil Disobedience Movement", "Quit India Movement", "Swadeshi Movement" ],
+        options: ["Non-Cooperation Movement", "Civil Disobedience Movement", "Quit India Movement", "Swadeshi Movement"],
         answer: "Quit India Movement",
         difficulty: "medium",
         category: "History",
@@ -952,10 +952,10 @@ const questions = [
         answer: "The God of Small Things",
         difficulty: "hard",
         category: "Books",
-    },  
+    },
     {
         question: "Which book won the Booker Prize in 1997?",
-        options: ["Midnight's Children", "The God of Small Things", "Life of Pi", "The White Tiger" ],
+        options: ["Midnight's Children", "The God of Small Things", "Life of Pi", "The White Tiger"],
         answer: "The God of Small Things",
         difficulty: "hard",
         category: "Books",
@@ -1122,7 +1122,7 @@ const questions = [
             "Sugar",
         ],
         answer: "Flour",
-        difficulty: "easy", 
+        difficulty: "easy",
         category: "Food and Drinks",
     },
     {
@@ -1160,7 +1160,7 @@ const questions = [
         answer: "Milk",
         difficulty: "easy",
         category: "Food and Drinks",
-    },  
+    },
     {
         question: "Which country is famous for sushi?",
         options: [
@@ -1181,7 +1181,7 @@ const questions = [
             "Fusilli",
             "Fettuccine",
         ],
-        answer: "Macaroni", 
+        answer: "Macaroni",
         difficulty: "medium",
         category: "Food and Drinks",
     },
@@ -1507,14 +1507,14 @@ const questions = [
     },
     {
         question: "Which tool is commonly used for painting?",
-        options: ["Hammer","Paintbrush","Chisel","Needle"],
+        options: ["Hammer", "Paintbrush", "Chisel", "Needle"],
         answer: "Paintbrush",
         difficulty: "easy",
         category: "Art",
     },
     {
         question: "Which color is made by mixing red and blue?",
-        options: ["Green","Orange","Purple","Yellow"],
+        options: ["Green", "Orange", "Purple", "Yellow"],
         answer: "Purple",
         difficulty: "easy",
         category: "Art",
@@ -1524,9 +1524,9 @@ const questions = [
         options: ["Canvas", "Wood", "Glass", "Metal"],
         answer: "Canvas",
         difficulty: "easy",
-        category: "Art",    
-  },
-  {
+        category: "Art",
+    },
+    {
         question: "Which art form involves shaping clay?",
         options: ["Painting", "Drawing", "Sculpture", "Photography"],
         answer: "Sculpture",
@@ -1542,14 +1542,14 @@ const questions = [
     },
     {
         question: "Which art movement is associated with Pablo Picasso?",
-        options: ["Impressionism", "Cubism", "Surrealism", "Realism"],  
+        options: ["Impressionism", "Cubism", "Surrealism", "Realism"],
         answer: "Cubism",
         difficulty: "medium",
         category: "Art",
     },
     {
         question: "What is the art of making images using light called?",
-        options: ["Sculpture", "Photography", "Sketching", "Engraving"],    
+        options: ["Sculpture", "Photography", "Sketching", "Engraving"],
         answer: "Photography",
         difficulty: "medium",
         category: "Art",
@@ -1559,11 +1559,11 @@ const questions = [
         options: ["The British Museum", "The Louvre", "The Met Museum", "The Vatican Museum"],
         answer: "The Louvre",
         difficulty: "medium",
-        category: "Art",    
+        category: "Art",
     },
     {
         question: "Which art style focuses on light and color?",
-        options: ["Realism", "Impressionism", "Abstract", "Baroque"],   
+        options: ["Realism", "Impressionism", "Abstract", "Baroque"],
         answer: "Impressionism",
         difficulty: "medium",
         category: "Art",
@@ -1577,7 +1577,7 @@ const questions = [
     },
     {
         question: "Which art movement is characterized by dream-like imagery?",
-        options: ["Cubism", "Surrealism", "Impressionism", "Minimalism"],  
+        options: ["Cubism", "Surrealism", "Impressionism", "Minimalism"],
         answer: "Surrealism",
         difficulty: "hard",
         category: "Art",
@@ -1600,7 +1600,7 @@ const questions = [
         question: "What is the technique of painting on wet plaster called?",
         options: ["Oil painting", "Acrylic painting", "Fresco", "Tempera"],
         answer: "Fresco",
-        difficulty: "hard", 
+        difficulty: "hard",
         category: "Art",
     },
 
@@ -1615,7 +1615,7 @@ const questions = [
     {
         question: "How many houses are there in the Indian Parliament?",
         options: ["One", "Two", "Three", "Four"],
-        answer: "Two",  
+        answer: "Two",
         difficulty: "easy",
         category: "Politics",
     },
@@ -1636,10 +1636,10 @@ const questions = [
     {
         question: "Which body conducts elections in India?",
         options: ["Supreme Court", "Election Commission", "Parliament", "Cabinet"],
-        answer: "Election Commission",  
+        answer: "Election Commission",
         difficulty: "easy",
         category: "Politics",
-    },  
+    },
     {
         question: "What is the tenure of the Lok Sabha?",
         options: ["4 years", "5 years", "6 years", "7 years"],
@@ -1661,7 +1661,7 @@ const questions = [
         difficulty: "medium",
         category: "Politics",
     },
-    {   
+    {
         question: "Which country follows a presidential form of government?",
         options: ["India", "United Kingdom", "United States", "Canada"],
         answer: "United States",
@@ -1670,7 +1670,7 @@ const questions = [
     },
     {
         question: "Who appoints the Prime Minister of India?",
-        options: ["Chief Justice", "President", "Speaker of Lok Sabha",  "Election Commission"],
+        options: ["Chief Justice", "President", "Speaker of Lok Sabha", "Election Commission"],
         answer: "President",
         difficulty: "medium",
         category: "Politics",
@@ -1684,7 +1684,7 @@ const questions = [
     },
     {
         question: "What is the minimum age to become the President of India?",
-        options: ["25 years", "30 years",  "35 years", "40 years"],
+        options: ["25 years", "30 years", "35 years", "40 years"],
         answer: "35 years",
         difficulty: "hard",
         category: "Politics",
@@ -1693,9 +1693,9 @@ const questions = [
         question: "Which amendment introduced the Goods and Services Tax (GST) in India?",
         options: ["99th Amendment", "100th Amendment", "101st Amendment", "102nd Amendment"],
         answer: "101st Amendment",
-        difficulty: "hard", 
+        difficulty: "hard",
         category: "Politics",
-    },  
+    },
     {
         question: "Who was the first President of India?",
         options: ["Rajendra Prasad", "S. Radhakrishnan", "Jawaharlal Nehru", "Zakir Husain"],
@@ -1705,11 +1705,11 @@ const questions = [
     },
     {
         question: "Which body has the power of judicial review in India?",
-        options: ["Parliament", "President", "Supreme Court",     "Election Commission"],
+        options: ["Parliament", "President", "Supreme Court", "Election Commission"],
         answer: "Supreme Court",
         difficulty: "hard",
         category: "Politics",
-    },  
+    },
     {
         question: "What is the main law-making body of a country called?",
         options: ["Judiciary", "Legislature", "Executive", "Bureaucracy"],
@@ -1826,7 +1826,7 @@ const questions = [
     },
     {
         question: "Which vitamin is produced when the body is exposed to sunlight?",
-        options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],  
+        options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
         answer: "Vitamin D",
         difficulty: "easy",
         category: "Health",
@@ -1851,14 +1851,14 @@ const questions = [
         answer: "Proteins",
         difficulty: "easy",
         category: "Health",
-    },  
+    },
     {
         question: "Which disease is caused by deficiency of Vitamin C?",
-        options: ["Rickets","Scurvy", "Beriberi", "Anemia"],
+        options: ["Rickets", "Scurvy", "Beriberi", "Anemia"],
         answer: "Scurvy",
         difficulty: "medium",
         category: "Health",
-    },      
+    },
     {
         question: "What does BMI stand for?",
         options: ["Body Mass Index", "Body Muscle Intake", "Basic Metabolic Index", "Body Measurement Indicator"],
@@ -1868,7 +1868,7 @@ const questions = [
     },
     {
         question: "Which blood group is known as the universal donor?",
-        options: ["A", "B", "AB", "O negative" ],  
+        options: ["A", "B", "AB", "O negative"],
         answer: "O negative",
         difficulty: "medium",
         category: "Health",
@@ -1886,7 +1886,7 @@ const questions = [
         answer: "36.5–37°C",
         difficulty: "medium",
         category: "Health",
-    },  
+    },
     {
         question: "Which hormone regulates blood sugar levels in the human body?",
         options: ["Adrenaline", "Thyroxine", "Insulin", "Estrogen"],
@@ -1901,7 +1901,7 @@ const questions = [
         difficulty: "hard",
         category: "Health",
     },
-    {       
+    {
         question: "Which part of the brain controls balance and coordination?",
         options: ["Cerebrum", "Medulla", "Cerebellum", "Hypothalamus"],
         answer: "Cerebellum",
@@ -1910,14 +1910,14 @@ const questions = [
     },
     {
         question: "Which disease affects the insulin-producing cells of the pancreas?",
-        options: ["Type 1 Diabetes", "Asthma", "Tuberculosis",  "Arthritis"],
+        options: ["Type 1 Diabetes", "Asthma", "Tuberculosis", "Arthritis"],
         answer: "Type 1 Diabetes",
         difficulty: "hard",
         category: "Health",
     },
     {
         question: "Which vitamin deficiency causes night blindness?",
-        options: ["Vitamin A","Vitamin B12", "Vitamin C", "Vitamin D"],
+        options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
         answer: "Vitamin A",
         difficulty: "hard",
         category: "Health",
@@ -2061,9 +2061,9 @@ const questions = [
         question: "Which actress starred in the movie 'Titanic'?",
         options: ["Angelina Jolie", "Kate Winslet", "Julia Roberts", "Scarlett Johansson"],
         answer: "Kate Winslet",
-        difficulty: "easy", 
+        difficulty: "easy",
         category: "Celebrities",
-    },  
+    },
     {
         question: "Which celebrity owns the fashion brand 'Fenty'?",
         options: ["Beyoncé", "Rihanna", "Nicki Minaj", "Adele"],
@@ -2073,7 +2073,7 @@ const questions = [
     },
     {
         question: "Who was the first Indian to win an individual Olympic gold medal?",
-        options: ["Milkha Singh", "Abhinav Bindra", "Neeraj Chopra", "P. T. Usha"],      
+        options: ["Milkha Singh", "Abhinav Bindra", "Neeraj Chopra", "P. T. Usha"],
         answer: "Abhinav Bindra",
         difficulty: "medium",
         category: "Celebrities",
@@ -2128,7 +2128,7 @@ const questions = [
         answer: "Michael Jackson",
         difficulty: "hard",
         category: "Celebrities",
-    },  
+    },
     {
         question: "Who was named Time Magazine's Person of the Year in 2006?",
         options: ["George W. Bush", "You", "Barack Obama", "Mark Zuckerberg"],
@@ -2266,7 +2266,7 @@ const questions = [
     },
     {
         question: "Which of the following is an input device?",
-        options: ["Speaker", "Printer",   "Scanner", "Monitor"],
+        options: ["Speaker", "Printer", "Scanner", "Monitor"],
         answer: "Scanner",
         difficulty: "easy",
         category: "Computers",
@@ -2276,7 +2276,7 @@ const questions = [
         options: ["RAM", "Hard Disk", "CPU", "Motherboard"],
         answer: "CPU",
         difficulty: "easy",
-        category: "Computers",  
+        category: "Computers",
     },
     {
         question: "Which programming language is primarily used for web development?",
@@ -2322,7 +2322,7 @@ const questions = [
     },
     {
         question: "What is the time complexity of binary search?",
-        options: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],  
+        options: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
         answer: "O(log n)",
         difficulty: "hard",
         category: "Computers",
@@ -2588,14 +2588,14 @@ const questions = [
     },
     {
         question: "Which animal is famous for its black and white stripes?",
-        options: ["Zebra",     "Tiger", "Panda",  "Cow"],
+        options: ["Zebra", "Tiger", "Panda", "Cow"],
         answer: "Zebra",
         difficulty: "easy",
         category: "Animals",
     },
     {
         question: "Which animal is known as man's best friend?",
-        options: ["Cat", "Horse", "Dog", "Rabbit" ],
+        options: ["Cat", "Horse", "Dog", "Rabbit"],
         answer: "Dog",
         difficulty: "easy",
         category: "Animals",
@@ -2621,7 +2621,7 @@ const questions = [
     },
     {
         question: "Which animal is known to sleep standing up?",
-        options: ["Horse", "Dog",   "Elephant", "Cow"],
+        options: ["Horse", "Dog", "Elephant", "Cow"],
         answer: "Horse",
         difficulty: "medium",
         category: "Animals",
@@ -2642,7 +2642,7 @@ const questions = [
     },
     {
         question: "Which animal has the highest blood pressure?",
-        options: [  "Elephant", "Giraffe", "Rhinoceros", "Horse"],
+        options: ["Elephant", "Giraffe", "Rhinoceros", "Horse"],
         answer: "Giraffe",
         difficulty: "hard",
         category: "Animals",
@@ -2663,7 +2663,7 @@ const questions = [
     },
     {
         question: "Which animal has three hearts?",
-        options: ["Octopus", "Shark", "Whale",         "Dolphin"],
+        options: ["Octopus", "Shark", "Whale", "Dolphin"],
         answer: "Octopus",
         difficulty: "hard",
         category: "Animals",
@@ -2674,8 +2674,8 @@ const questions = [
         answer: "Parrot",
         difficulty: "hard",
         category: "Animals",
-    }, 
-    
+    },
+
     // Mathematics
     {
         question: "What is 5 + 7?",
@@ -2996,7 +2996,7 @@ const questions = [
     },
     {
         question: "Who is known as the King of Pop?",
-        options: ["Elvis Presley","Michael Jackson", "Justin Bieber", "Bruno Mars"],
+        options: ["Elvis Presley", "Michael Jackson", "Justin Bieber", "Bruno Mars"],
         answer: "Michael Jackson",
         difficulty: "easy",
         category: "Music",
@@ -3723,7 +3723,7 @@ const questions = [
     },
     {
         question: "Which Grand Slam tournament is played on clay courts?",
-        options: ["Wimbledon", "US Open", "Australian Open", "French Open" ],
+        options: ["Wimbledon", "US Open", "Australian Open", "French Open"],
         answer: "French Open",
         difficulty: "hard",
         category: "Sports",
@@ -3856,7 +3856,7 @@ const questions = [
         difficulty: "easy",
         category: "Science and Nature",
     },
-    {   
+    {
         question: "Which planet is known as the Red Planet?",
         options: ["Venus", "Mars", "Jupiter", "Saturn"],
         answer: "Mars",
@@ -3870,7 +3870,7 @@ const questions = [
         difficulty: "easy",
         category: "Science and Nature",
     },
-    {   
+    {
         question: "What force keeps us on the ground?",
         options: ["Magnetism", "Friction", "Gravity", "Pressure"],
         answer: "Gravity",
@@ -3896,7 +3896,7 @@ const questions = [
         options: ["Crust", "Mantle", "Core", "Lithosphere"],
         answer: "Mantle",
         difficulty: "medium",
-        category: "Science and Nature", 
+        category: "Science and Nature",
     },
     {
         question: "Which organ is responsible for detoxifying the blood?",
@@ -3916,7 +3916,7 @@ const questions = [
         question: "What is the SI unit of electric current?",
         options: ["Volt", "Ampere", "Ohm", "Watt"],
         answer: "Ampere",
-        difficulty: "hard", 
+        difficulty: "hard",
         category: "Science and Nature",
     },
     {
@@ -3946,8 +3946,8 @@ const questions = [
         answer: "Refraction",
         difficulty: "hard",
         category: "Science and Nature",
-    }, 
-    
+    },
+
     // Films
     {
         question: "Which movie features the character 'Harry Potter'?",
@@ -4083,7 +4083,7 @@ const questions = [
         category: "Films",
     },
     {
-        question: "Which film is about a sinking ship?",    
+        question: "Which film is about a sinking ship?",
         options: ["Avatar", "Titanic", "Jaws", "Poseidon"],
         answer: "Titanic",
         difficulty: "easy",
@@ -4145,7 +4145,7 @@ const questions = [
         difficulty: "hard",
         category: "Films",
     },
-    {   
+    {
         question: "Which film character says “I am your father”?",
         options: ["Darth Vader", "Yoda", "Luke", "Obi-Wan"],
         answer: "Darth Vader",
@@ -4158,7 +4158,7 @@ const questions = [
         answer: "Oscar",
         difficulty: "hard",
         category: "Films",
-    },  
+    },
 
     // video games
     {
@@ -4212,7 +4212,7 @@ const questions = [
     },
     {
         question: "What is the main objective in the game 'Among Us'?",
-        options: ["Build cities",  "Find treasure", "Identify the impostor", "Race cars"],
+        options: ["Build cities", "Find treasure", "Identify the impostor", "Race cars"],
         answer: "Identify the impostor",
         difficulty: "medium",
         category: "Video Games",
@@ -4295,12 +4295,12 @@ const questions = [
         category: "Video Games",
     },
     {
-        question: "Which console is made by Sony?", 
+        question: "Which console is made by Sony?",
         options: ["Xbox", "PlayStation", "Switch", "Steam Deck"],
         answer: "PlayStation",
         difficulty: "easy",
         category: "Video Games",
-    },  
+    },
     {
         question: "Which company developed GTA?",
         options: ["EA", "Ubisoft", "Rockstar Games", "Valve"],
@@ -4351,7 +4351,7 @@ const questions = [
         category: "Video Games",
     },
     {
-        question: "Which console introduced motion controls?",  
+        question: "Which console introduced motion controls?",
         options: ["PS2", "Xbox 360", "Nintendo Wii", "PS4"],
         answer: "Nintendo Wii",
         difficulty: "hard",
@@ -4477,7 +4477,7 @@ const questions = [
         answer: "Flashpoint",
         difficulty: "hard",
         category: "Comics",
-    },      
+    },
     {
         question: "Which comic features Superman?",
         options: ["Marvel", "DC Comics", "Image Comics", "Dark Horse"],
@@ -4512,7 +4512,7 @@ const questions = [
         answer: "Marvel Comics",
         difficulty: "easy",
         category: "Comics",
-    },  
+    },
     {
         question: "Which metal is bonded to Wolverine?",
         options: ["Vibranium", "Adamantium", "Steel", "Titanium"],
@@ -4535,7 +4535,7 @@ const questions = [
         category: "Comics",
     },
     {
-        question: "Which hero is also called the Man of Steel?",    
+        question: "Which hero is also called the Man of Steel?",
         options: ["Batman", "Superman", "Iron Man", "Thor"],
         answer: "Superman",
         difficulty: "medium",
@@ -4547,7 +4547,7 @@ const questions = [
         answer: "X-Men",
         difficulty: "medium",
         category: "Comics",
-    },  
+    },
     {
         question: "Which comic artist co-created Spider-Man?",
         options: ["Stan Lee", "Bob Kane", "Jack Kirby", "Steve Ditko"],
@@ -4576,11 +4576,13 @@ const questions = [
         difficulty: "hard",
         category: "Comics",
     },
-    {       
+    {
         question: "Which comic company introduced Watchmen?",
         options: ["Marvel", "DC", "Image", "Vertigo"],
         answer: "DC",
         difficulty: "hard",
         category: "Comics",
-    },  
+    },
 ]
+
+export default questionsData;

@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faClapperboard,
   faBrain,
@@ -20,7 +21,7 @@ import {
   faAtom,
   faFilm,
   faGamepad,
-  faBookOpen
+  faBookOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import categories from "../../data/categories";
 
@@ -45,11 +46,8 @@ const iconMap = {
   atom: faAtom,
   film: faFilm,
   gamepad: faGamepad,
-  bookOpen: faBookOpen
+  bookOpen: faBookOpen,
 };
-
-
-
 
 const Body = () => {
   return (
@@ -62,7 +60,9 @@ const Body = () => {
             </div>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
-            <button className="start-btn">Start Quiz</button>
+            <Link to={`/quiz/${item.slug}`} className="start-btn">
+              Start Quiz
+            </Link>
           </div>
         ))}
       </div>

@@ -1,15 +1,16 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Body from "../components/Body/Body";
+import React from 'react'
+import { useParams } from "react-router-dom";
 
-const Quiz = () => {
+function Quiz() {
+    const { slug } = useParams();
+
+    console.log(slug);
+
     return (
-        <>
-            <Header />
-            <Body />
-            <Footer />
-        </>
+        <div>
+            <h1>Quiz: {slug}</h1>
+        </div>
     );
-};
+}
 
 export default Quiz;
