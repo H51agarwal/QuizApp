@@ -1,3 +1,28 @@
+import {
+  faClapperboard,
+  faBrain,
+  faTv,
+  faClock,
+  faBook,
+  faBurger,
+  faPalette,
+  faScaleBalanced,
+  faHeartPulse,
+  faStar,
+  faLaptop,
+  faPaw,
+  faCalculator,
+  faMusic,
+  faGlobe,
+  faCar,
+  faFootball,
+  faAtom,
+  faFilm,
+  faGamepad,
+  faBookOpen,
+} from "@fortawesome/free-solid-svg-icons";
+
+
 const categories = [
     {
         title: "Cartoons and Animations",
@@ -127,4 +152,28 @@ const categories = [
     }
 ];
 
-export default categories;
+const iconMap = {
+    clapperboard: faClapperboard,
+    brain: faBrain,
+    tv: faTv,
+    clock: faClock,
+    book: faBook,
+    burger: faBurger,
+    palette: faPalette,
+    scale: faScaleBalanced,
+    heart: faHeartPulse,
+    star: faStar,
+    laptop: faLaptop,
+    paw: faPaw,
+    calculator: faCalculator,
+    music: faMusic,
+    globe: faGlobe,
+    car: faCar,
+    football: faFootball,
+    atom: faAtom,
+    film: faFilm,
+    gamepad: faGamepad,
+    bookOpen: faBookOpen,
+};
+
+export { categories, iconMap };

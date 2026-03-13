@@ -1,38 +1,96 @@
-import categories from "../../data/categories";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBolt,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+
+const NAV_LINKS = ["Categories", "Create Quiz", "Leaderboard", "About"];
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <>
-      <header className="navbar">
-        <div className="nav-right">
-          <a href="/leaderboard">Leaderboard</a>
-          <a href="/about">About Us</a>
-          <button className="login-btn">Login / SignUp</button>
-        </div>
-      </header>
-      <section className="hero">
-        <h1>Test Your Knowledge</h1>
-        <p className="subtitle">
-          Free Online Quizzes lets you play fun quizzes in various categories
-          <br />
-          Whether you are studying or just having fun, there is something for
-          everyone
-        </p>
-        <h2>Enter your own category</h2>
-        <input
-          type="text"
-          className="category-input"
-          list="category-options"
-        />
-        <datalist id="category-options" size={5} >
-          {categories.map((category, index) => (
-            <option key={index} value={category.title} />
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 border-b border-white/40 shadow-sm">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-extrabold text-xl text-[#0040df]"
+          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+        >
+          <FontAwesomeIcon icon={faBolt} className="text-[#9e41f5]" />
+          QuizMaster
+        </Link>
+
+        {/* Desktop nav */}
+        <ul className="hidden md:flex items-center gap-8">
+          {NAV_LINKS.map((l) => (
+            <li key={l}>
+              <a
+                href="#"
+                className="text-sm font-medium text-slate-600 hover:text-[#0040df] transition-colors"
+                style={{ fontFamily: "'Manrope', sans-serif" }}
+              >
+                {l}
+              </a>
+            </li>
           ))}
-        </datalist>
-        <p className="or-text">or</p>
-        <h3>Create a category</h3>
-      </section>
-    </>
+        </ul>
+
+        {/* CTA */}
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="#"
+            className="text-sm font-semibold text-slate-600 hover:text-[#0040df] transition-colors"
+            style={{ fontFamily: "'Manrope', sans-serif" }}
+          >
+            Log In
+          </a>
+          <a
+            href="#"
+            className="px-4 py-2 rounded-lg text-sm font-bold text-white bg-linear-to-r from-[#0040df] to-[#2d5bff] hover:scale-105 transition-transform shadow-md shadow-blue-300/40"
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          >
+            Sign Up Free
+          </a>
+        </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden text-slate-700 text-xl"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon icon={open ? faXmark : faBars} />
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="md:hidden bg-white/95 backdrop-blur-md px-6 pb-6 pt-2 flex flex-col gap-4 border-t border-slate-100">
+          {NAV_LINKS.map((l) => (
+            <a
+              key={l}
+              href="#"
+              className="text-sm font-medium text-slate-600 hover:text-[#0040df]"
+              style={{ fontFamily: "'Manrope', sans-serif" }}
+            >
+              {l}
+            </a>
+          ))}
+          <a
+            href="#"
+            className="mt-2 px-4 py-2 rounded-lg text-sm font-bold text-white text-center bg-linear-to-r from-[#0040df] to-[#2d5bff]"
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          >
+            Sign Up Free
+          </a>
+        </div>
+      )}
+    </nav>
   );
 };
 
