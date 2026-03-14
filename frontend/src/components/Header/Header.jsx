@@ -7,7 +7,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-const NAV_LINKS = ["Categories", "Create Quiz", "Leaderboard", "About"];
+const NAV_LINKS = [{"Categories":'/categories'}, {"Create Quiz":'/create-quiz'}, {"Leaderboard":'/leaderboard'}, {"About":'/about'}];
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -27,17 +27,20 @@ const Header = () => {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map((l) => (
-            <li key={l}>
-              <a
-                href="#"
-                className="text-sm font-medium text-slate-600 hover:text-[#0040df] transition-colors"
-                style={{ fontFamily: "'Manrope', sans-serif" }}
-              >
-                {l}
-              </a>
-            </li>
-          ))}
+          {NAV_LINKS.map((item) => {
+            const [label, path] = Object.entries(item)[0];
+            return (
+              <li key={label}>
+                <Link
+                  to={path}
+                  className="text-sm font-medium text-slate-600 hover:text-[#0040df] transition-colors"
+                  style={{ fontFamily: "'Manrope', sans-serif" }}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         {/* CTA */}
@@ -71,16 +74,20 @@ const Header = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white/95 backdrop-blur-md px-6 pb-6 pt-2 flex flex-col gap-4 border-t border-slate-100">
-          {NAV_LINKS.map((l) => (
-            <a
-              key={l}
-              href="#"
-              className="text-sm font-medium text-slate-600 hover:text-[#0040df]"
-              style={{ fontFamily: "'Manrope', sans-serif" }}
-            >
-              {l}
-            </a>
-          ))}
+          {NAV_LINKS.map((item) => {
+            const [label, path] = Object.entries(item)[0];
+            return (
+              <Link
+                key={label}
+                to={path}
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium text-slate-600 hover:text-[#0040df]"
+                style={{ fontFamily: "'Manrope', sans-serif" }}
+              >
+                {label}
+              </Link>
+            );
+          })}
           <a
             href="#"
             className="mt-2 px-4 py-2 rounded-lg text-sm font-bold text-white text-center bg-linear-to-r from-[#0040df] to-[#2d5bff]"
